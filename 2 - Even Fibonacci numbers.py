@@ -15,4 +15,4 @@ def fib(n):    # write Fibonacci series up to n
     return numbers
 
 even = [x for x in fib(4000000) if x % 2 == 0]
-print sum(even)
+print sum(even)  # prints 4613732
