@@ -1,2 +1,2 @@
 # Solutions for Project Euler problems
-[Link to website](www.projecteuler.net)
+[Link to website](http://www.projecteuler.net)
