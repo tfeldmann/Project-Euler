@@ -4,4 +4,4 @@
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
 number = [x for x in range(1000) if x % 5 == 0 or x % 3 == 0]
-print sum(number)
+print sum(number)  # prints 233168
