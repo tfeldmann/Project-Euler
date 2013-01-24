@@ -21,4 +21,4 @@ def biggestpalindrome():
 
     return max(possible_solutions)
 
-print biggestpalindrome()
+print biggestpalindrome()  # prints 906609
