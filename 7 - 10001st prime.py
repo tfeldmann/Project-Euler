@@ -17,4 +17,4 @@ while not c == 10001:
     n += 1
     if isprime(n):
         c += 1
-print n
+print n  # prints 104743
