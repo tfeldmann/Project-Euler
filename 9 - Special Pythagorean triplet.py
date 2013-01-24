@@ -10,12 +10,11 @@ def is_pythagorean_triplet(a, b, c):
     return a**2 + b**2 == c**2
 
 def find_pythagorean_triplet_with_sum(n):
-    RANGE = range(1, n)
-    for h in RANGE:
-        for j in RANGE:
-            for k in RANGE:
-                if h + j + k == n and is_pythagorean_triplet(h, j, k):
-                    return [h, j, k]
+    for a in range(3, (n - 3) / 3):
+        for b in range(a + 1, (n - 1 - a) / 2):
+            c = n - a - b
+            if is_pythagorean_triplet(a, b, c):
+                return [a, b, c]
 
 triplet = find_pythagorean_triplet_with_sum(1000)
 
