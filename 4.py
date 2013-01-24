@@ -8,14 +8,17 @@ def ispalindrome(n):
     return s == r
 
 def biggestpalindrome():
+    possible_solutions = []
     x = 999
-    while x > 100:
+    while x > 99:
         y = 999
-        while y > 100:
+        while y > 99:
             n = x * y
             if ispalindrome(n):
-                return {"product": n, "n1": x, "n2": y}
+                possible_solutions.append(n)
             y = y - 1
         x = x - 1
+
+    return max(possible_solutions)
 
 print biggestpalindrome()
