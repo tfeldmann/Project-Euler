@@ -1,4 +1,6 @@
-# Find the greatest product of five consecutive digits in the 1000-digit number.
+"""
+Find the greatest product of five consecutive digits in the 1000-digit number.
+"""
 
 NUMBER = \
 "73167176531330624919225119674426574742355349194934" \
@@ -23,8 +25,9 @@ NUMBER = \
 "71636269561882670428252483600823257530420752963450"
 
 def product_of_digits_in_string(s):
-    """ Returns the product of all digits in a string.
-        The string must consist only of digits.
+    """
+    Returns the product of all digits in a string.
+    The string must consist only of digits.
     """
     result = int(s[0])
     for d in range(1, len(s)):
